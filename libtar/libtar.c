@@ -471,7 +471,7 @@ extract(char *tarfile, char *rootdir)
 	return 0;
 }
 
-
+#ifndef BUILD_AS_LIBRARY
 void
 usage(void *rootdir)
 {
@@ -591,4 +591,5 @@ main(int argc, char *argv[])
 	return return_code;
 }
 
+#endif /* BUILD_AS_LIBRARY */
 

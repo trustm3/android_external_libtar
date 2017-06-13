@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <sys/param.h>
 #include <sys/types.h>
+#include <sys/ioctl.h>
 #include <fcntl.h>
 #include <errno.h>
 #include <utime.h>
@@ -22,6 +23,7 @@
 #ifdef STDC_HEADERS
 # include <stdlib.h>
 # include <string.h>
+# include <stdint.h>
 #endif
 
 #ifdef HAVE_UNISTD_H
